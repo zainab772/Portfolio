@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #eef0f5;
+      padding: 40px 20px;
+    }
+
+    .contact-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 40px 50px;
+      width: 100%;
+      max-width: 700px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .contact-card h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .contact-card input[type="text"],
+    .contact-card input[type="email"],
+    .contact-card textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #d0d5dd;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #333;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .contact-card input[type="text"]::placeholder,
+    .contact-card input[type="email"]::placeholder,
+    .contact-card textarea::placeholder {
+      color: #aaa;
+    }
+
+    .contact-card input[type="text"]:focus,
+    .contact-card input[type="email"]:focus,
+    .contact-card textarea:focus {
+      border-color: #2d7ff9;
+    }
+
+    .contact-card textarea {
+      height: 140px;
+      resize: vertical;
+    }
+
+    .contact-card button[type="submit"] {
+      width: 100%;
+      padding: 13px;
+      background-color: #2d7ff9;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.2s;
+    }
+
+    .contact-card button[type="submit"]:hover {
+      background-color: #1a6ce0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-wrapper">
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+
+      <form action="https://formsubmit.co/zainabmoiz2007@gmail.com" method="POST">
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="User Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="abc@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
